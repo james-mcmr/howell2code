@@ -11,13 +11,14 @@
 	<script src="js/jquery.ui.sortable.js"></script>
 	<link rel="stylesheet" href="css/demos.css">
 	<style>
-	.column { width: 170px; float: left; padding-bottom: 100px; }
+	.column { width: 170px; float: left;}
 	.portlet { margin: 0 1em 1em 0; }
 	.portlet-header { margin: 0.3em; padding-bottom: 4px; padding-left: 0.2em; }
 	.portlet-header .ui-icon { float: right; }
 	.portlet-content { padding: 0.4em; }
 	.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 50px !important; }
 	.ui-sortable-placeholder * { visibility: hidden; }
+	.demo{width:510px;}
 	</style>
 	<script>
 	$(function() {
@@ -25,9 +26,9 @@
 			connectWith: ".column"
 		});
 
-		$( ".portlet" ).addClass( "ui-widget ui-widget-content ui-helper-clearfix ui-corner-all" )
+		$( ".portlet" )
 			.find( ".portlet-header" )
-				.addClass( "ui-widget-header ui-corner-all" )
+				.addClass( "ui-widget-header" )
 				.prepend( "<span class='ui-icon ui-icon-minusthick'></span>")
 				.end()
 			.find( ".portlet-content" );
@@ -80,6 +81,52 @@
 	</div>
 
 </div>
+
+
+<div class="column">
+
+	<div class="portlet">
+		<div class="portlet-header">Links</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+	
+	<div class="portlet">
+		<div class="portlet-header">Images</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+
+	<div class="portlet">
+		<div class="portlet-header">Links</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+	
+	<div class="portlet">
+		<div class="portlet-header">Images</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+
+</div>
+
+
+<div class="column">
+
+	<div class="portlet">
+		<div class="portlet-header">Links</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+	
+	<div class="portlet">
+		<div class="portlet-header">Images</div>
+		<div class="portlet-content">Lorem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+	</div>
+
+</div>
+
 
 </div><!-- End demo -->
 

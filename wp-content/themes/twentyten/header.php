@@ -36,6 +36,32 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo( 'stylesheet_url' ); ?>" />
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/jquery.ui.all.css">
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.core.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.widget.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.mouse.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.sortable.js"></script>
+<script>
+$(function() {
+	$( ".column" ).sortable({
+		connectWith: ".column"
+	});
+	$( ".post" )
+		.find( ".post-header" )
+			.addClass( "ui-widget-header" )
+			.append( "<span class='ui-icon ui-icon-minusthick'></span>")
+			.end()
+		.find( ".entry-content" );
+
+	$( ".post-header .ui-icon" ).click(function() {
+		$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
+		$( this ).parents( ".post:first" ).find( ".entry-content" ).toggle();
+	});
+
+	$( ".column" ).disableSelection();
+});
+</script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -52,7 +78,7 @@
 ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> style="cursor:auto;">
 <div id="wrapper" class="hfeed">
 	<div id="header">
 		<div id="masthead">

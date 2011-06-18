@@ -538,10 +538,23 @@ div.menu li {
 	background: #f2f7fc;
 }
 .hentry {
-	margin: 0 10px 48px 0;
-	width:300px;
+	margin: 0 0px 20px 0;
+	width:320px;
 	float:left;
 	
+}
+
+.post-header{
+	background-color:#000000;
+	color:#FFFFFF;
+}
+
+#content .post-header-hover h2 a{
+	color:#FFFFFF;
+}
+
+.post-hover{
+	background:url(images/black_transparent.png) repeat;
 }
 .home .sticky {
 	background: #f2f7fc;
@@ -581,7 +594,13 @@ div.menu li {
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
+	float:left;
 }
+
+.column {float: left; width:320px; }
+.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 70px !important; }
+.ui-sortable-placeholder * { visibility: hidden; }
+
 .entry-title a:link,
 .entry-title a:visited {
 	color: #000;
