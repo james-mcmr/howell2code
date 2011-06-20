@@ -71,8 +71,8 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 
 #container {
 	float: left;
-	margin: 0 -240px 0 0;
-	width: 100%;
+	margin: 0;
+	width: 680px;
 }
 #content {
 	margin: 0 0 0 0;
@@ -544,6 +544,9 @@ div.menu li {
 	
 }
 
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+#sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 320px; height: 420px; }
+
 .post-header{
 	background-color:#000000;
 	color:#FFFFFF;
@@ -596,10 +599,6 @@ div.menu li {
 	margin-bottom: 0;
 	float:left;
 }
-
-.column {float: left; width:320px; margin-right:10px;}
-.ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 70px !important; }
-.ui-sortable-placeholder * { visibility: hidden; }
 
 .entry-title a:link,
 .entry-title a:visited {

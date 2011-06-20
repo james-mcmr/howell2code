@@ -43,28 +43,12 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.mouse.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.sortable.js"></script>
 <script>
-$(function() {
-	$( ".column" ).sortable({
-		connectWith: ".column"
+	$(function() {
+		$( "#sortable" ).sortable();
+		$( "#sortable" ).disableSelection();
 	});
-	$( ".post" )
-		.find( ".post-header" )
-			.addClass( "ui-widget-header" )
-			.append( "<span class='ui-icon ui-icon-minusthick'></span>")
-			.end()
-		.find( ".entry-content" );
-
-	$( ".post-header .ui-icon" ).click(function() {
-		$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
-		$( this ).parents( ".post:first" ).find( ".entry-content" ).toggle();
-	});
-	
-	$( ".column" ).disableSelection();
-	$( ".ui-widget-header" ).hover(function() {
-		$(this).css("cursor","pointer");
-	});
-});
 </script>
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
