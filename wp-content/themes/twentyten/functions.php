@@ -247,6 +247,10 @@ function twentyten_excerpt_length( $length ) {
 }
 add_filter( 'excerpt_length', 'twentyten_excerpt_length' );
 
+if ( function_exists('register_sidebar') )
+register_sidebar();
+
+
 /**
  * Returns a "Continue Reading" link for excerpts
  *

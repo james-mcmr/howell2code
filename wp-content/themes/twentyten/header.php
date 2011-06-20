@@ -58,8 +58,11 @@ $(function() {
 		$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
 		$( this ).parents( ".post:first" ).find( ".entry-content" ).toggle();
 	});
-
+	
 	$( ".column" ).disableSelection();
+	$( ".ui-widget-header" ).hover(function() {
+		$(this).css("cursor","pointer");
+	});
 });
 </script>
 <?php

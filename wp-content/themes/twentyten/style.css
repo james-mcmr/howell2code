@@ -597,7 +597,7 @@ div.menu li {
 	float:left;
 }
 
-.column {float: left; width:320px; }
+.column {float: left; width:320px; margin-right:10px;}
 .ui-sortable-placeholder { border: 1px dotted black; visibility: visible !important; height: 70px !important; }
 .ui-sortable-placeholder * { visibility: hidden; }
 
