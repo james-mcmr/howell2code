@@ -74,9 +74,9 @@
                     ?>
                             <div class="gallery-thumb">
                                 <a class="size-thumbnail" href="<?php the_permalink(); ?>"><?php echo $image_img_tag; ?></a>
-                            </div><!-- .gallery-thumb -->
+                            </div><!-- .gallery-thumb!--> 
                     <?php endif; ?>
-                            <?php the_excerpt(); ?>
+                            <?php //the_excerpt(); ?>
     <?php endif; ?>
                 </div><!-- .entry-content -->
     

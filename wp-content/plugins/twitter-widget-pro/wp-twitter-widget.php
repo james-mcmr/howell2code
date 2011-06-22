@@ -458,7 +458,7 @@ class wpTwitterWidget extends XavisysPlugin {
 		}
 
 		$widgetContent = $args['before_widget'] . '<div>';
-
+		$args['before_title'] .="<a href='#' class='twitterwidget-blog'>Blog</a>";
 		// If "hide rss" hasn't been checked, show the linked icon
 		if ( $args['hiderss'] != 'true' ) {
 			if ( file_exists(dirname(__FILE__) . '/rss.png') ) {

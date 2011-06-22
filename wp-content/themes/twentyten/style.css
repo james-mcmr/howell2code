@@ -72,16 +72,19 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 #container {
 	float: left;
 	margin: 0;
-	width: 680px;
+	width: 720px;
 }
 #content {
 	margin: 0 0 0 0;
 }
 #primary,
-#secondary {
+#secondary
+{
 	float: right;
 	overflow: hidden;
-	width: 220px;
+	width: 230px;
+	padding-left:10px;
+	
 }
 #secondary {
 	clear: right;
@@ -484,7 +487,6 @@ div.menu li {
 #content dd,
 #content pre,
 #content hr {
-	margin-bottom: 24px;
 }
 #content ul ul,
 #content ol ol,
@@ -538,14 +540,16 @@ div.menu li {
 	background: #f2f7fc;
 }
 .hentry {
-	margin: 0 0px 20px 0;
-	width:320px;
+	margin: 0;
+	width:206px;
 	float:left;
-	
+	border:2px dashed #666;
+	height:220px;
+	padding:5px 10px;;
 }
 
 #sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { margin: 3px 3px 3px 0; padding: 1px; float: left; width: 320px; height: 420px; }
+#sortable li { float: left; width: 220px; height:240px; padding-bottom:10px; padding-right:10px; padding-left:10px;}
 
 .post-header{
 	background-color:#000000;
@@ -593,7 +597,7 @@ div.menu li {
 }
 #content .entry-title {
 	color: #000;
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: bold;
 	line-height: 1.3em;
 	margin-bottom: 0;
@@ -625,6 +629,7 @@ div.menu li {
 .entry-summary {
 	clear: both;
 	padding: 12px 0 0 0;
+	font-size:12px;
 }
 #content .entry-summary p:last-child {
 	margin-bottom: 12px;
@@ -777,13 +782,10 @@ body.page .edit-link {
 
 .format-gallery .size-thumbnail img,
 .category-gallery .size-thumbnail img {
-	border: 4px solid #000000;
 	margin-bottom: 0;
 }
 .format-gallery .gallery-thumb,
 .category-gallery .gallery-thumb {
-	margin-right: 20px;
-	margin-top: -4px;
 }
 .home #content .format-gallery .entry-utility,
 .home #content .category-gallery .entry-utility {
@@ -1177,11 +1179,39 @@ h3#reply-title {
 }
 .widget-container {
 	margin: 0 0 18px 0;
+	height:470px;
 }
-.widget-title {
-	color: #222;
+
+.widget_twitter .entry-content{
+	color:#6971A7;
+}
+
+.widget_twitter ul li{
+	list-style:none;
+}
+
+.widget_twitter .widget-title {
+	color: #FFF;
 	font-weight: bold;
+	border-bottom:4px solid #555555;
+	float:left;
+	width:220px;
+	margin-bottom:10px;
 }
+.widget_twitter .twitterwidget-title{
+	background:#555555;
+	color:#FFFFFF;
+	float:left;
+	padding:5px;
+}
+
+.widget_twitter .twitterwidget-blog{
+	background:#FFFFFF;
+	color:#555555;
+	float:left;
+	padding:5px;
+}
+
 .widget-area a:link,
 .widget-area a:visited {
 	text-decoration: none;
@@ -1240,11 +1270,13 @@ h3#reply-title {
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
-	padding: 0 20px 0 0;
+	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-right:10px;
+	padding-left:10px;
 }
 #main .widget-area ul ul {
 	border: none;
-	margin-left: 1.3em;
 	padding: 0;
 }
 #primary {
