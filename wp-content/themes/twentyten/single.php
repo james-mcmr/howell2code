@@ -11,7 +11,13 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-
+			
+            <?php
+				foreach((get_the_category()) as $category) { 
+    				echo $category->cat_name . ' '; 
+				} 
+			?>
+            
 			<?php
 			/* Run the loop to output the post.
 			 * If you want to overload this in a child theme then include a file

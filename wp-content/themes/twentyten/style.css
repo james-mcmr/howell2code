@@ -68,7 +68,7 @@ html{
 LAYOUT: Two columns
 DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
-body.home #container{width:720px;}
+body.home #container, body.category #container{width:720px;}
 
 #container {
 	float: left;
@@ -558,7 +558,7 @@ div.menu li {
 #sortable { list-style-type: none; margin: 0; padding: 0; }
 #sortable li { float: left; width: 220px; height:240px; padding-bottom:10px; padding-right:10px; padding-left:10px;}
 
-#sortable .hentry {
+#sortable .hentry, body.category .hentry {
 	margin: 0;
 	width:206px;
 	float:left;
