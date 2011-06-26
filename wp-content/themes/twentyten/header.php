@@ -42,29 +42,33 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.widget.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.mouse.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.sortable.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.tabs.js"></script>
 <script>
-$(function() {
-	$( ".column" ).sortable({
-		connectWith: ".column"
+	$(function() {
+		$( "#sortable" ).sortable();
+		$( "#sortable" ).disableSelection();
 	});
-	$( ".post" )
-		.find( ".post-header" )
-			.addClass( "ui-widget-header" )
-			.append( "<span class='ui-icon ui-icon-minusthick'></span>")
-			.end()
-		.find( ".entry-content" );
-
-	$( ".post-header .ui-icon" ).click(function() {
-		$( this ).toggleClass( "ui-icon-minusthick" ).toggleClass( "ui-icon-plusthick" );
-		$( this ).parents( ".post:first" ).find( ".entry-content" ).toggle();
+	$(function() {
+		$( "#primary" ).tabs();
 	});
 	
-	$( ".column" ).disableSelection();
-	$( ".ui-widget-header" ).hover(function() {
-		$(this).css("cursor","pointer");
-	});
-});
+//	$(function() {
+//		$(".menu-header ul li").hover(
+//		  function () {
+//			//alert("test");
+//			$(this).siblings().addClass("inactive");		
+//			$(this).addClass("active");
+//		  },
+//		  function () {
+//			//alert("test 2");  
+//			$(this).siblings().removeClass("inactive");		
+//			$(this).removeClass("active");
+//		  }
+//		);
+//	});
+	
 </script>
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
@@ -92,7 +96,14 @@ $(function() {
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+				<div id="site-contact">
+                	<ul>
+                    	<li><a href="#" class="email">Stalk me via email</a></li>
+                        <li><a href="#" class="twitter">Stalk me on Twitter</a></li>
+                        <li><a href="#" class="linkedin">Stalk me on LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!--<div id="site-description">--><?php //bloginfo( 'description' ); ?><!--</div>-->
 
 				<?php
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one

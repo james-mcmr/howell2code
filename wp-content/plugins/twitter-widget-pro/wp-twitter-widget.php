@@ -458,7 +458,7 @@ class wpTwitterWidget extends XavisysPlugin {
 		}
 
 		$widgetContent = $args['before_widget'] . '<div>';
-
+		//$args['before_title'] .="<a href='#' class='twitterwidget-blog'>Blog</a>";
 		// If "hide rss" hasn't been checked, show the linked icon
 		if ( $args['hiderss'] != 'true' ) {
 			if ( file_exists(dirname(__FILE__) . '/rss.png') ) {
@@ -477,20 +477,20 @@ class wpTwitterWidget extends XavisysPlugin {
 		}
 		$twitterLink = 'http://twitter.com/' . $args['username'];
 
-		if (empty($args['title'])) {
-			$args['title'] = "Twitter: {$args['username']}";
-		}
+		//if (empty($args['title'])) {
+			//$args['title'] = "Twitter: {$args['username']}";
+		//}
 		$linkAttrs = array(
 			'class'	=> 'twitterwidget twitterwidget-title',
 			'title'	=> "Twitter: {$args['username']}",
 			'href'	=> $twitterLink
 		);
-		$args['title'] = $this->_buildLink($args['title'], $linkAttrs, current_user_can('unfiltered_html'));
+		//$args['title'] = $this->_buildLink($args['title'], $linkAttrs, current_user_can('unfiltered_html'));
 		$widgetContent .= $args['before_title'] . $args['title'] . $args['after_title'];
 		if (!is_a($tweets, 'wpTwitterWidgetException') && !empty($tweets[0]) && $args['avatar'] == 'true') {
-			$widgetContent .= '<div class="twitter-avatar">';
-			$widgetContent .= $this->_getProfileImage($tweets[0]->user);
-			$widgetContent .= '</div>';
+			//$widgetContent .= '<div class="twitter-avatar">';
+			//$widgetContent .= $this->_getProfileImage($tweets[0]->user);
+			//$widgetContent .= '</div>';
 		}
 		$widgetContent .= '<ul>';
 		if (is_a($tweets, 'wpTwitterWidgetException')) {
@@ -514,7 +514,7 @@ class wpTwitterWidget extends XavisysPlugin {
 					);
 					$widgetContent .= $this->_buildLink($tweet->ago, $linkAttrs);
 					$widgetContent .= '</span>';
-					$widgetContent .= " <span class='from-meta'>{$from}</span>";
+					//$widgetContent .= " <span class='from-meta'>{$from}</span>";
 					if ( !empty($tweet->in_reply_to_screen_name) ) {
 						$rtLinkText = sprintf( __('in reply to %s', $this->_slug), $tweet->in_reply_to_screen_name );
 						$widgetContent .=  '<span class="in-reply-to-meta">';
