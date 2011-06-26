@@ -68,11 +68,12 @@ html{
 LAYOUT: Two columns
 DESCRIPTION: Two-column fixed layout with one sidebar right of content
 */
+body.home #container{width:720px;}
 
 #container {
 	float: left;
 	margin: 0;
-	width: 720px;
+	width: 100%;
 }
 #content {
 	margin: 0 0 0 0;
@@ -83,8 +84,6 @@ DESCRIPTION: Two-column fixed layout with one sidebar right of content
 	float: right;
 	overflow: hidden;
 	width: 230px;
-	padding-left:10px;
-	
 }
 #secondary {
 	clear: right;
@@ -166,8 +165,6 @@ code {
 -------------------------------------------------------------- */
 
 /* The main theme structure */
-#access .menu-header,
-div.menu,
 #colophon,
 #branding,
 #main,
@@ -233,7 +230,6 @@ p {
 }
 ul {
 	list-style: square;
-	margin: 0 0 18px 1.5em;
 }
 ol {
 	list-style: decimal;
@@ -322,7 +318,7 @@ textarea {
 	padding: 2px;
 }
 a:link {
-	color: #0066cc;
+	color: #6971A7;
 }
 a:visited {
 	color: #743399;
@@ -387,13 +383,17 @@ a:hover {
 	display: block;
 	float: left;
 	margin: 0 auto;
-	width: 960px;
-	border-bottom: 4px solid #6971A7;
 }
 #access .menu-header,
 div.menu {
 
 }
+/*
+#access .menu-header ul li.inactive a{
+	background:#FFFFFF;
+	color:#000000;
+}
+*/
 #access .menu-header ul,
 div.menu ul {
 	list-style: none;
@@ -404,14 +404,21 @@ div.menu li {
 	float: left;
 	position: relative;
 }
-#access a {
-	color: #000000;
+#access a , #access a.inactive{
+	color: #FFFFFF;
+	background:#555555;
 	font-size:16px;
 	font-weight:bold;
 	display: block;
 	line-height: 38px;
-	padding: 0 10px;
+	padding: 0px 10px;
 	text-decoration: none;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 #access ul ul {
 	box-shadow: 0px 3px 3px rgba(0,0,0,0.2);
@@ -439,10 +446,11 @@ div.menu li {
 	width: 160px;
 	height: auto;
 }
+
+
 #access li:hover > a,
 #access ul ul :hover > a {
-	background: #6971A7;
-	color: #fff;
+	text-decoration:underline;
 }
 #access ul li:hover > ul {
 	display: block;
@@ -453,6 +461,12 @@ div.menu li {
 #access ul li.current-menu-parent > a {
 	background: #6971A7;
 	color: #fff;
+	-webkit-border-top-left-radius: 6px;
+	-webkit-border-top-right-radius: 6px;
+	-moz-border-radius-topleft: 6px;
+	-moz-border-radius-topright: 6px;
+	border-top-left-radius: 6px;
+	border-top-right-radius: 6px;
 }
 * html #access ul li.current_page_item a,
 * html #access ul li.current-menu-ancestor a,
@@ -467,9 +481,9 @@ div.menu li {
 -------------------------------------------------------------- */
 
 #main {
-	clear: both;
-	overflow: hidden;
+	float:left;
 	padding: 40px 0 0 0;
+	border-top: 4px solid #6971A7
 }
 #content {
 	margin-bottom: 36px;
@@ -539,7 +553,12 @@ div.menu li {
 #content tr.odd td {
 	background: #f2f7fc;
 }
-.hentry {
+
+
+#sortable { list-style-type: none; margin: 0; padding: 0; }
+#sortable li { float: left; width: 220px; height:240px; padding-bottom:10px; padding-right:10px; padding-left:10px;}
+
+#sortable .hentry {
 	margin: 0;
 	width:206px;
 	float:left;
@@ -547,9 +566,6 @@ div.menu li {
 	height:220px;
 	padding:5px 10px;;
 }
-
-#sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { float: left; width: 220px; height:240px; padding-bottom:10px; padding-right:10px; padding-left:10px;}
 
 .post-header{
 	background-color:#000000;
@@ -573,7 +589,11 @@ div.menu li {
 .single .hentry {
 	margin: 0 0 36px 0;
 	width:100%;
+	padding:0 0 0 0;
 }
+
+
+
 .page-title {
 	color: #000;
 	font-size: 14px;
@@ -1179,32 +1199,42 @@ h3#reply-title {
 }
 .widget-container {
 	margin: 0 0 18px 0;
-	height:470px;
 }
 
 .widget_twitter .entry-content{
+	color:#555555;
+}
+
+
+#primary .widget_twitter ul li{
+	list-style:none;
+	background:#E1E1E1;
+	border-bottom:1px solid #555555;
+	padding:10px;
+}
+
+#primary .widget_twitter ul li a{
 	color:#6971A7;
 }
 
-.widget_twitter ul li{
-	list-style:none;
-}
-
 .widget_twitter .widget-title {
-	color: #FFF;
+	color: #000;
 	font-weight: bold;
-	border-bottom:4px solid #555555;
+	border-bottom:4px solid #6971A7;
 	float:left;
 	width:220px;
-	margin-bottom:10px;
 }
 .widget_twitter .twitterwidget-title{
-	background:#555555;
 	color:#FFFFFF;
 	float:left;
 	padding:5px;
+	background:#6971A7;
 }
 
+.widget_twitter a.twitterwidget-title:hover{
+	background:#6971A7;
+	color:#FFF;
+}
 .widget_twitter .twitterwidget-blog{
 	background:#6971A7;
 	color:#FFFFFF;
@@ -1222,6 +1252,7 @@ h3#reply-title {
 }
 .widget-area .entry-meta {
 	font-size: 11px;
+	display:block;
 }
 #wp_tag_cloud div {
 	line-height: 1.6em;
@@ -1270,10 +1301,7 @@ h3#reply-title {
 /* Main sidebars */
 #main .widget-area ul {
 	margin-left: 0;
-	padding-bottom: 10px;
-	padding-top: 0px;
-	padding-right:10px;
-	padding-left:10px;
+	float:left;
 }
 #main .widget-area ul ul {
 	border: none;
@@ -1281,6 +1309,16 @@ h3#reply-title {
 }
 #primary {
 }
+
+#primary ul.xoxo li{
+	width:210px;
+	float:left;
+}
+
+#blog-tab{
+	padding:10px;
+}
+
 #secondary {
 }
 
@@ -1355,7 +1393,41 @@ code {
 #site-description {
 	-webkit-text-size-adjust: none;
 }
+#site-contact{
+	float:right;
+	margin:30px 0 0 0;
+}
+#site-contact ul li{
+	list-style:none;
+}
 
+#site-contact ul li a{
+	height:22px;
+	display:block;
+	text-align:left;
+	padding:0px 30px 0px 5px;
+	margin-bottom:5px;
+	background:#E1E1E1;
+	text-decoration:none;
+	color:#555555;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+#site-contact ul li a:hover, #site-contact ul li a:active{
+	text-decoration:underline;
+}
+
+#site-contact ul li a.email{
+	background:url(images/email.jpg) #E1E1E1 no-repeat top right; 
+}
+#site-contact ul li a.twitter{
+	background:url(images/twitter.jpg) #E1E1E1 no-repeat top right; 
+}
+#site-contact ul li a.linkedin{
+	background:url(images/linkedin.jpg) #E1E1E1 no-repeat top right; 	
+}
 
 /* =Print Style
 -------------------------------------------------------------- */

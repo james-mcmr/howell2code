@@ -42,11 +42,31 @@
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.widget.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.mouse.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.sortable.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.tabs.js"></script>
 <script>
 	$(function() {
 		$( "#sortable" ).sortable();
 		$( "#sortable" ).disableSelection();
 	});
+	$(function() {
+		$( "#primary" ).tabs();
+	});
+	
+//	$(function() {
+//		$(".menu-header ul li").hover(
+//		  function () {
+//			//alert("test");
+//			$(this).siblings().addClass("inactive");		
+//			$(this).addClass("active");
+//		  },
+//		  function () {
+//			//alert("test 2");  
+//			$(this).siblings().removeClass("inactive");		
+//			$(this).removeClass("active");
+//		  }
+//		);
+//	});
+	
 </script>
 
 <?php
@@ -76,7 +96,14 @@
 						<a href="<?php echo home_url( '/' ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a>
 					</span>
 				</<?php echo $heading_tag; ?>>
-				<div id="site-description"><?php bloginfo( 'description' ); ?></div>
+				<div id="site-contact">
+                	<ul>
+                    	<li><a href="#" class="email">Stalk me via email</a></li>
+                        <li><a href="#" class="twitter">Stalk me on Twitter</a></li>
+                        <li><a href="#" class="linkedin">Stalk me on LinkedIn</a></li>
+                    </ul>
+                </div>
+                <!--<div id="site-description">--><?php //bloginfo( 'description' ); ?><!--</div>-->
 
 				<?php
 					// Check if this is a post or page, if it has a thumbnail, and if it's a big one

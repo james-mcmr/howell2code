@@ -143,7 +143,7 @@ $.widget( "ui.tabs", {
 				if ( !$panel.length ) {
 					$panel = $( o.panelTemplate )
 						.attr( "id", id )
-						.addClass( "ui-tabs-panel ui-widget-content ui-corner-bottom" )
+						.addClass( "ui-tabs-panel ui-widget-content" )
 						.insertAfter( self.panels[ i - 1 ] || self.list );
 					$panel.data( "destroy.tabs", true );
 				}
@@ -157,10 +157,10 @@ $.widget( "ui.tabs", {
 		// initialization from scratch
 		if ( init ) {
 			// attach necessary classes for styling
-			this.element.addClass( "ui-tabs ui-widget ui-widget-content ui-corner-all" );
-			this.list.addClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all" );
-			this.lis.addClass( "ui-state-default ui-corner-top" );
-			this.panels.addClass( "ui-tabs-panel ui-widget-content ui-corner-bottom" );
+			this.element.addClass( "ui-tabs ui-widget ui-widget-content" );
+			this.list.addClass( "ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header" );
+			this.lis.addClass( "ui-state-default" );
+			this.panels.addClass( "ui-tabs-panel ui-widget-content" );
 
 			// Selected tab
 			// use "selected" option or try to retrieve:
