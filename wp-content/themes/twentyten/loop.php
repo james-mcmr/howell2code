@@ -52,7 +52,13 @@
 	 * the rest of the loop that is shared.
 	 *
 	 * Without further ado, the loop:
-	 */ ?>
+	 */
+?>
+<?php 
+	if(is_home()){
+		query_posts('category_name=projects&showposts=6');
+	};
+?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 <?php /* How to display posts of the Gallery format. The gallery category is the old way. */ ?>

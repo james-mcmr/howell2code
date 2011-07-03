@@ -404,10 +404,15 @@ div.menu li {
 	float: left;
 	position: relative;
 }
+
+#access .menu-header li#menu-item-120{
+	display:none;
+}
+
 #access a , #access a.inactive{
 	color: #FFFFFF;
 	background:#555555;
-	font-size:16px;
+	font-size:13px;
 	font-weight:bold;
 	display: block;
 	line-height: 38px;
