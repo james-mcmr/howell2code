@@ -11,9 +11,9 @@ get_header(); ?>
 
 		<div id="container">
 			<div id="content" role="main">
-				<ul id="sortable">				
+								
 				<?php get_template_part( 'loop', 'category' );?>
-                </ul>
+               
 			</div><!-- #content -->
 		</div><!-- #container -->
 
