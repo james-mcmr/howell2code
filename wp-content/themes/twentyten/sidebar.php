@@ -43,7 +43,21 @@
                 </li><?php 
 		
 			endif; // end primary widget area ?>
-            	<li id="blog-tab">Blog content to go here</li>
+            	<li id="blog-tab">          
+					 <?php 
+	
+						 query_posts('category_name=h2c-blog&showposts=2');
+	
+						 while ( have_posts() ) : the_post(); ?>
+                    
+                                <div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+                                    <h2><?php the_title(); ?></h2>
+                                    <div class="entry-content">
+                                        <?php the_excerpt(); ?>
+                                    </div>
+                                </div>
+                    <?php endwhile; // end of the loop. ?>                              
+                </li>
 			</ul>
 		</div><!-- #primary .widget-area -->
 
