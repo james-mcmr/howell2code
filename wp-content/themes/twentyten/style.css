@@ -81,9 +81,9 @@ body.home #container, body.category #container{width:720px;}
 #primary,
 #secondary
 {
-	float: right;
+	float: left;
 	overflow: hidden;
-	width: 230px;
+	width: 240px;
 }
 #secondary {
 	clear: right;
@@ -561,7 +561,7 @@ div.menu li {
 
 
 #sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { float: left; width: 220px; height:240px; padding-bottom:5px; padding-right:10px; padding-left:10px;}
+#sortable li { float: left; width: 220px; height:240px; padding-bottom:5px; padding-right:10px; margin-right:10px;}
 
 #sortable .hentry{
 	margin: 0;
@@ -1316,7 +1316,7 @@ h3#reply-title {
 }
 
 #primary ul.xoxo li{
-	width:210px;
+	width:220px;
 	float:left;
 }
 
