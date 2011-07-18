@@ -406,10 +406,6 @@ div.menu li {
 	position: relative;
 }
 
-#access .menu-header li#menu-item-120{
-	display:none;
-}
-
 #access a , #access a.inactive{
 	color: #FFFFFF;
 	background:#555555;
