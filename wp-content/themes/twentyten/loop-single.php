@@ -23,7 +23,7 @@
 				</div><!-- #nav-above -->
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-					<h1 class="entry-title"><?php the_title(); ?></h1>
+					<h1><?php the_title(); ?></h1>
 
 					<!--<div class="entry-meta">
 						<?php //twentyten_posted_on(); ?>
@@ -33,10 +33,8 @@
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
-					<div style="width:240px; float:left; background:#000000;">
+					<div class="project-thumbs">
                     	<?php display_images_in_list('large'); ?>
-
-                    
                     </div>
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
 					<div id="entry-author-info">
