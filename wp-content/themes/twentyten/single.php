@@ -13,9 +13,9 @@ get_header(); ?>
 			<div id="content" role="main">
 			
             <?php
-				foreach((get_the_category()) as $category) { 
-    				echo $category->cat_name . ' '; 
-				} 
+				//foreach((get_the_category()) as $category) { 
+    				//echo $category->cat_name . ' '; 
+				//} 
 			?>
             
 			<?php

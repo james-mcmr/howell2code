@@ -79,7 +79,7 @@
                             $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );
                     ?>
                             <div class="gallery-thumb">
-                                <a class="size-thumbnail" href="<?php the_permalink(); ?>"><?php echo $image_img_tag; ?></a>
+                                <a class="size-thumbnail" href="<?php the_permalink(); ?>"><?php the_post_thumbnail();?></a>
                             </div><!-- .gallery-thumb!--> 
                     <?php endif; ?>
                             <?php //the_excerpt(); ?>

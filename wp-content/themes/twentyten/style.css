@@ -595,6 +595,11 @@ div.menu li {
 	padding:0 0 0 0;
 }
 
+div.category-projects .entry-content{
+	width:700px;
+	float:left;
+	padding-right:20px;
+}
 
 
 .page-title {
@@ -938,8 +943,8 @@ img.aligncenter {
 }
 
 .attachment-post-thumbnail{
-	width:214px;
-	height:214px;
+	width:206px;
+	height:182px;
 }
 
 
@@ -980,8 +985,11 @@ img.aligncenter {
 	float:left;
 }
 .paged #nav-above,
-.single #nav-above {
+.single #nav-above,
+.single #nav-below
+{
 	display: block;
+	width:720px;
 }
 #nav-below {
 	margin: -18px 0 0 0;
