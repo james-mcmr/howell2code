@@ -341,6 +341,7 @@ a:hover {
 
 #header {
 	padding: 30px 0 0 0;
+	float:left;
 }
 #site-title {
 	float: left;
