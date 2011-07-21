@@ -1,0 +1,17 @@
+/* CSS Document */
+
+#sortable li{
+	margin-right:0px;
+}
+
+#sortable li .entry-content{
+	padding-right:0px;
+}
+
+a.tablinks:link,
+a.tablinks:hover,
+a.tablinks:active,
+a.tablinks:visited
+{
+	color:#FFFFFF;
+}

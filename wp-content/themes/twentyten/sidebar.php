@@ -10,8 +10,8 @@
 
 		<div id="primary" class="widget-area" role="complementary">
 				<ul>
-					<li><a href="#blog-tab">Blog</a></li>
-                    <li><a href="#twitter-3">Twitter</a></li>				
+					<li><a href="#blog-tab" class="tablinks">Blog</a></li>
+                    <li><a href="#twitter-3" class="tablinks">Twitter</a></li>				
 				</ul>
             <ul class="xoxo">
 				

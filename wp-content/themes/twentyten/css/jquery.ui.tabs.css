@@ -10,7 +10,9 @@
 .ui-tabs {} /* position: relative prevents IE scroll bug (element with position: relative inside container with overflow: auto appear as "fixed") */
 .ui-tabs .ui-tabs-nav {border-bottom:4px solid #6971A7; width:240px;}
 .ui-tabs .ui-tabs-nav li {float:left;}
-.ui-tabs .ui-tabs-nav li a {
+.ui-tabs .ui-tabs-nav li a,
+a.tablinks
+ {
 	padding:10px 10px 5px 10px;
 	float:left;
 	font-weight:bold;
