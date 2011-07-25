@@ -608,7 +608,7 @@ div.menu li {
 }
 
 div.category-projects .entry-content{
-	width:700px;
+	width:440px;
 	float:left;
 	padding-right:20px;
 	padding-top:0px;
@@ -617,9 +617,44 @@ div.category-projects .entry-content{
 
 div.category-projects .project-thumbs{
 	float:left;
-	width:240px;
+	width:500px;
 }
 
+div.category-projects .thumb-nav{
+	width:30px;
+	float:left;
+	height:315px;
+	position:relative;
+}
+
+div.category-projects .thumb-image{
+	width:420px;
+	height:315px;
+	float:left;
+	padding:0 10px;
+}
+
+div.category-projects .thumb-image ul{
+	list-style-type:none;
+}
+
+div.category-projects a.nav-arrow{
+	position:absolute;
+	top:132px;
+	width:30px;
+	height:50px;
+	overflow:hidden;
+	text-decoration:none;
+	text-indent:-9999px;
+}
+
+div.category-projects a.nav-arrow-left{
+	background:url(images/arrow-left.png) no-repeat;
+}
+
+div.category-projects a.nav-arrow-right{
+	background:url(images/arrow-right.png) no-repeat;
+}
 
 .page-title {
 	color: #000;

@@ -4,3 +4,7 @@ wp-config-backup.php
 .htaccess
 wp-content/uploads/
 nbproject/
+/.settings/
+nbproject/private/private.properties
+
+nbproject/private/private.properties
