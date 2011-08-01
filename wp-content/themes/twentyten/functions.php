@@ -535,7 +535,8 @@ function display_images_in_list($size = thumbnail) {
 	))) {
 		foreach($images as $image) {
 			$attimg   = wp_get_attachment_image($image->ID,$size);
-			echo "<li><a href='#'>".$attimg."</a></li>";
+
+echo $attimg;
 
 		}
 	}

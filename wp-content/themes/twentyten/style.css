@@ -165,14 +165,18 @@ code {
 -------------------------------------------------------------- */
 
 /* The main theme structure */
-
+#colophon,
+#branding,
+#main,
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
 #wrapper {
 	background: #fff;
 	margin-top: 20px;
 	padding: 0 20px;
 	overflow:hidden;
-	margin: 0 auto;
-	width: 960px;
 }
 
 /* Structure the footer area */
@@ -338,20 +342,7 @@ a:hover {
 #header {
 	padding: 30px 0 0 0;
 	float:left;
-	width:960px;
-	border-bottom: 4px solid #6971A7
 }
-
-#header-left{
-	float:left;
-	width:798px;
-}
-
-#header-right{
-	float:left;
-	width:162px;
-}
-
 #site-title {
 	float: left;
 	font-size: 30px;
@@ -410,7 +401,6 @@ div.menu {
 div.menu ul {
 	list-style: none;
 	margin: 0;
-	width:340px;
 }
 #access .menu-header li,
 div.menu li {
@@ -498,6 +488,7 @@ div.menu li {
 #main {
 	float:left;
 	padding: 10px 0 0 0;
+	border-top: 4px solid #6971A7
 }
 #content {
 	margin-bottom: 36px;
@@ -570,8 +561,7 @@ div.menu li {
 
 
 #sortable { list-style-type: none; margin: 0; padding: 0; }
-#sortable li { float: left; width: 220px; height:240px; padding-bottom:5px; padding-right:10px; margin-right:10px; display:inline;}
-#sortable li .entry-content{width:206px;}
+#sortable li { float: left; width: 220px; height:240px; padding-bottom:5px; padding-right:10px; margin-right:10px;}
 
 #sortable .hentry{
 	margin: 0;
@@ -608,7 +598,7 @@ div.menu li {
 }
 
 div.category-projects .entry-content{
-	width:440px;
+	width:700px;
 	float:left;
 	padding-right:20px;
 	padding-top:0px;
@@ -617,44 +607,9 @@ div.category-projects .entry-content{
 
 div.category-projects .project-thumbs{
 	float:left;
-	width:500px;
+	width:240px;
 }
 
-div.category-projects .thumb-nav{
-	width:30px;
-	float:left;
-	height:315px;
-	position:relative;
-}
-
-div.category-projects .thumb-image{
-	width:420px;
-	height:315px;
-	float:left;
-	padding:0 10px;
-}
-
-div.category-projects .thumb-image ul{
-	list-style-type:none;
-}
-
-div.category-projects a.nav-arrow{
-	position:absolute;
-	top:132px;
-	width:30px;
-	height:50px;
-	overflow:hidden;
-	text-decoration:none;
-	text-indent:-9999px;
-}
-
-div.category-projects a.nav-arrow-left{
-	background:url(images/arrow-left.png) no-repeat;
-}
-
-div.category-projects a.nav-arrow-right{
-	background:url(images/arrow-right.png) no-repeat;
-}
 
 .page-title {
 	color: #000;

@@ -34,13 +34,7 @@
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 					<div class="project-thumbs">
-                    	<div class="thumb-nav">
-                        	<a href="#" class="nav-arrow nav-arrow-left">Left</a>
-                        </div>
-						<div class="thumb-image"><ul><?php display_images_in_list('large'); ?></ul></div>
-                    	<div class="thumb-nav">
-                        	<a href="#" class="nav-arrow nav-arrow-right">Right</a>
-                        </div>
+                    	<?php display_images_in_list('large'); ?>
                     </div>
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
 					<div id="entry-author-info">

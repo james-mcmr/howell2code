@@ -481,7 +481,7 @@ class wpTwitterWidget extends XavisysPlugin {
 			//$args['title'] = "Twitter: {$args['username']}";
 		//}
 		$linkAttrs = array(
-			'class'	=> 'twitterwidget twitterwidget-title tablinks',
+			'class'	=> 'twitterwidget twitterwidget-title',
 			'title'	=> "Twitter: {$args['username']}",
 			'href'	=> $twitterLink
 		);
