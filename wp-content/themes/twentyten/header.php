@@ -68,7 +68,7 @@
 //	});
 	
 </script>
-<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).

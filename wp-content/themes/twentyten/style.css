@@ -341,7 +341,6 @@ a:hover {
 
 #header {
 	padding: 30px 0 0 0;
-	float:left;
 }
 #site-title {
 	float: left;
@@ -349,7 +348,6 @@ a:hover {
 	line-height: 36px;
 	margin: 0 0 18px 0;
 	width: 700px;
-	display:inline;
 }
 #site-title a {
 	color: #000;
@@ -1426,12 +1424,9 @@ code {
 #site-contact{
 	float:right;
 	margin:30px 0 0 0;
-	width:162px;
-	display:inline;
 }
 #site-contact ul li{
 	list-style:none;
-	width:162px;
 }
 
 #site-contact ul li a{
