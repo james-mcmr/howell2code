@@ -2,5 +2,5 @@ wp-config.php
 wp-config-backup.php
 .htaccess
 .htaccess
-wp-content/plugins/*
-wp-content/uploads/*
+wp-content/plugins/
+wp-content/uploads/
