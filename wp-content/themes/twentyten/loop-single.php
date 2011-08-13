@@ -34,7 +34,11 @@
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 					<div class="project-thumbs">
-                    	<?php display_images_in_list('large'); ?>
+                        <div id="slideshow">
+                        	<div id="slidesContainer">                   	
+								<?php display_images_in_list('large'); ?>
+                        	</div>
+                        </div>    
                     </div>
 <?php if ( get_the_author_meta( 'description' ) ) : // If a user has filled out their description, show a bio on their entries  ?>
 					<div id="entry-author-info">

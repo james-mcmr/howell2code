@@ -596,7 +596,7 @@ div.menu li {
 }
 
 div.category-projects .entry-content{
-	width:700px;
+	width:460px;
 	float:left;
 	padding-right:20px;
 	padding-top:0px;
@@ -606,6 +606,53 @@ div.category-projects .entry-content{
 div.category-projects .project-thumbs{
 	float:left;
 	width:240px;
+}
+
+
+<!--
+/** 
+ * Slideshow style rules.
+ */
+#slideshow {
+	margin:0 auto;
+	width:480px;
+	height:300px;
+	position:relative;
+}
+#slideshow #slidesContainer {
+  margin:0 auto;
+  width:400px;
+  height:300px;
+  overflow:auto; /* allow scrollbar */
+  position:relative;
+}
+#slideshow #slidesContainer .slide {
+  margin:0 auto;
+  width:380px; /* reduce by 20 pixels of #slidesContainer to avoid horizontal scroll */
+  height:300px;
+  text-align:center;
+}
+
+/** 
+ * Slideshow controls style rules.
+ */
+.control {
+  display:block;
+  width:40px;
+  height:300px;
+  text-indent:-10000px;
+  position:absolute;
+  cursor: pointer;
+}
+#leftControl {
+  top:0;
+  left:0;
+  background:transparent url(images/control_left.png) no-repeat 0 0;
+}
+#rightControl {
+  top:0;
+  right:0;
+  background:transparent url(images/control_right.png) no-repeat 0 0;
 }
 
 

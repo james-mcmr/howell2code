@@ -39,6 +39,7 @@
 <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/css/jquery.ui.all.css">
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.core.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/slider.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.widget.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.mouse.js"></script>
 <script src="<?php bloginfo('template_directory'); ?>/js/jquery.ui.sortable.js"></script>
