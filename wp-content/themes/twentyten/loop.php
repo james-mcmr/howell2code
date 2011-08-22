@@ -79,7 +79,32 @@
                             $image_img_tag = wp_get_attachment_image( $image->ID, 'thumbnail' );
                     ?>
                             <div class="gallery-thumb">
-                                <a class="size-thumbnail" href="<?php the_permalink(); ?>"><?php the_post_thumbnail();?></a>
+                                <a class="size-thumbnail" href="<?php the_permalink(); ?>">
+                                
+								<?php
+                                //Get images attached to the post
+//                                $args = array(
+//                                    'post_type' => 'attachment',
+//                                    'post_mime_type' => 'image',
+//                                    'numberposts' => -1,
+//                                        'order' => 'ASC',
+//                                    'post_status' => null,
+//                                    'post_parent' => $post->ID
+//                                );
+//                                $attachments = get_posts($args);
+//                                if ($attachments) {
+//                                    foreach ($attachments as $attachment) {
+//                                        $img = wp_get_attachment_thumb_url( $attachment->ID );
+//                                                break;
+//                                        }
+//										echo "<img src=\"".$img."\" />";
+//                                //Display image
+//                                }
+									the_post_thumbnail('thumbnail');
+                                ?>                                
+                                
+                                
+                                </a>
                             </div><!-- .gallery-thumb!--> 
                     <?php endif; ?>
                             <?php //the_excerpt(); ?>

@@ -4,3 +4,4 @@ wp-config-backup.php
 .htaccess
 wp-content/plugins
 wp-content/uploads
+/.settings/

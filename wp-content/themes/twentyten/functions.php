@@ -122,7 +122,7 @@ function twentyten_setup() {
 	// We'll be using post thumbnails for custom header images on posts and pages.
 	// We want them to be 940 pixels wide by 198 pixels tall.
 	// Larger images will be auto-cropped to fit, smaller ones will be ignored. See header.php.
-	set_post_thumbnail_size( HEADER_IMAGE_WIDTH, HEADER_IMAGE_HEIGHT, true );
+	//set_post_thumbnail_size( 100, 100, true );
 
 	// Don't support text inside the header image.
 	if ( ! defined( 'NO_HEADER_TEXT' ) )
@@ -534,8 +534,30 @@ function display_images_in_list($size = thumbnail) {
                 'order'           => 'ASC',
 	))) {
 		foreach($images as $image) {
-			$attimg   = wp_get_attachment_image($image->ID,$size);
+			$attimg   = wp_get_attachment_image($image->ID,'medium');
 			echo "<div class='slide'>".$attimg."</div>";
 		}
+	}
+}
+
+function get_first_img_thumbnail(){	
+	//Get images attached to the post
+	$args = array(
+		'post_type' => 'attachment',
+		'post_mime_type' => 'image',
+		'numberposts' => -1,
+			'order' => 'ASC',
+		'post_status' => null,
+		'post_parent' => $post->ID
+	);
+	$attachments = get_posts($args);
+	if ($attachments) {
+		foreach ($attachments as $attachment) {
+			$img = wp_get_attachment_thumb_url( $attachment->ID );
+					break;
+			}
+			$img = "<img src=\"".$img."\" />";
+			return $img;
+	//Display image
 	}
 }

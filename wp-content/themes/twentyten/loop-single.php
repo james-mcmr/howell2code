@@ -29,14 +29,15 @@
 						<?php //twentyten_posted_on(); ?>
 					</div><!-- .entry-meta -->
 
-					<div class="entry-content">							
+					<div class="entry-content single-page">							
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'twentyten' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
 					<div class="project-thumbs">
                         <div id="slideshow">
                         	<div id="slidesContainer">                   	
-								<?php display_images_in_list('large'); ?>
+								<?php display_images_in_list('medium'); ?>
+                                <?php //wordpress_gallery(); ?>
                         	</div>
                         </div>    
                     </div>
