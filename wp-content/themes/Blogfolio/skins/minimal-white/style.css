@@ -1,0 +1,296 @@
+/*  
+Skin Name: Minimal White
+Version: 1.0
+Description: Skin for Blogfolio theme.
+Author: Themify.me
+*/
+html {
+	background: #fff;
+}
+body {
+	background: #fff;
+	color: #777;
+}
+a {
+	color: #000;
+	text-decoration: underline;
+}
+a:hover {
+	color: #000;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #333;
+	text-shadow: none;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+	color: #333;
+	text-decoration: underline;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	text-decoration: none;
+	color: #000;
+}
+input[type=text], input[type=password], textarea {
+	background: #fff;
+	border-color: #ccc;
+	color: #999;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+textarea:focus, input[type=password]:focus, input[type=text]:focus {
+	border-color: #666;
+	color: #333;
+}
+input[type=reset], input[type=submit] {
+	background: #333;
+	color: #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+input[type=reset]:hover, input[type=submit]:hover {
+	background: #000;
+	color: #fff;
+}
+/* header */
+#header {
+	border-bottom: solid 2px #6971A7;
+}
+#site-logo a {
+	color: #333;
+	text-shadow: none;
+}
+#site-description {
+	color: #999;
+}
+#header .socialmedia a {
+	color: #999;
+}
+#header .socialmedia a:hover {
+	color: #000;
+}
+/* message message */
+#welcome-message {
+	color: #999;
+}
+#welcome-message a {
+	color: #000;
+}
+/* slider */
+#slider .slides img {
+	background: #fff;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+#slider .slides .details {
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+}
+
+/* menu */
+#main-nav a {
+	color: #999;
+	text-shadow: none;
+}
+#main-nav a:hover {
+	color: #000;
+}
+#main-nav .current_page_item a, #main-nav .current-menu-item a, #main-nav .current-post-ancestor a{
+	background: none;
+	color: #000;
+}
+#main-nav .current_page_item a:hover, #main-nav .current-menu-item a:hover {
+	color: #000;
+}
+#main-nav ul {
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+#main-nav ul a {
+	text-shadow: none;
+}
+#main-nav ul a:hover {
+	color: #333;
+}
+/* content area */
+.post-title a {
+	color: #333;
+	text-decoration: none;
+}
+.post-title a:hover {
+	color: #000;
+}
+.post-date {
+	color: #999;
+}
+.post-meta a {
+	color: #666;
+}
+.post-meta a:hover {
+	color: #000;
+}
+.gridview a {
+	color: #444;
+}
+.gridview .excerpt {
+	color: #888;
+}
+.next-prev-post a {
+	color: #666;
+}
+.next-prev-post a:hover {
+	color: #000;
+}
+/* comments */
+.commentwrap {
+	border-top: solid 1px #ccc;
+}
+.commentlist li {
+	border-top: solid 1px #ccc;
+}
+.commentlist .avatar {
+	background: #fff;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+.commentlist .comment-reply-link {
+	background: none;
+	color: #666;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.commentlist .comment-reply-link:hover {
+	background: #ededed;
+	color: #000;
+}
+.commentlist cite {
+	color: #333;
+}
+#respond {
+	border-top: solid 1px #ccc;
+}
+#respond .cancel-comment-reply a {
+	background: #333;
+	color: #ccc;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+#respond .cancel-comment-reply a:hover {
+	color: #fff;
+	background: #000;
+}
+/* img-style */
+.img-style {
+	background: #fff;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+/* showcase */
+.showcase-nav img {
+	background: #fff;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+.showcase-nav .activeSlide img {
+	border: solid 1px #666;
+}
+
+.project-text{
+	width:510px; 
+	float:left;
+	padding-right:30px;
+	display:inline;
+}
+
+/* sidebar */
+#sidebar h4, .widgettitle {
+	color: #333333;
+}
+#sidebar h4 a, .widgettitle a {
+	color: #000;
+	text-decoration: none;
+}
+.widget ul a {
+	color: #333;
+	text-decoration: none;
+}
+.widget ul a:hover {
+	color: #000;
+	text-decoration: underline;
+}
+.widget .recent-comments .avatar {
+	background: #fff;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius:0;
+	-moz-border-radius: 0;
+}
+/* footer */
+#footer {
+	border-top: solid 2px #6971A7;
+}
+.footer-text {
+	color: #999;
+}
+.footer-text a {
+	color: #666;
+}
+.footer-text a:hover {
+	color: #000;
+}
+/* captions */
+img.alignleft, img.aligncenter, img.alignright, img.alignnone {
+	background: #fff;
+	padding: 4px;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}
+.alignleft {
+	float: left;
+	margin-right: 30px;
+}
+.alignright {
+	float: right;
+	margin-left: 30px;
+}
+.aligncenter {
+	text-align: center;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.wp-caption {
+	text-align: center;
+	background: #fff;
+	padding: 4px 2px 2px 0;
+	border: solid 1px #ccc;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+}

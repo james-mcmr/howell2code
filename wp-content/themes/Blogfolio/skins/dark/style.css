@@ -1,0 +1,213 @@
+/*  
+Skin Name: Dark
+Version: 1.0
+Description: Skin for Blogfolio theme.
+Author: Themify.me
+*/
+html {
+	background: #222 url(images/dark-noise-bg.png);
+}
+body {
+	background: url(images/noise-spot-lights.png) no-repeat center top;
+	color: #acacac;
+}
+a {
+	color: #6dcff6;
+}
+a:hover {
+	color: #fff;
+}
+h1, h2, h3, h4, h5, h6 {
+	color: #ededed;
+	text-shadow: 0 1px 2px rgba(0, 0, 0, .8);
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+	text-decoration: none;
+	color: #6dcff6;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+input[type=text], input[type=password], textarea {
+	background: #333;
+	border-color: #111;
+	color: #ccc;
+}
+textarea:focus, input[type=password]:focus, input[type=text]:focus {
+	border-color: #666;
+	color: #fff;
+}
+input[type=reset], input[type=submit] {
+	background: #000;
+	color: #fff;
+}
+input[type=reset]:hover, input[type=submit]:hover {
+	background: #000;
+	color: #6dcff6;
+}
+/* header */
+#header {
+	border-bottom: solid 1px #444;
+}
+#site-logo a {
+	color: #ededed;
+	text-shadow: 0 1px 4px rgba(0, 0, 0, .8);
+}
+#site-description {
+	color: #999;
+}
+#header .socialmedia a {
+	color: #999;
+}
+#header .socialmedia a:hover {
+	color: #ccc;
+}
+/* message message */
+#welcome-message {
+	color: #ccc;
+}
+#welcome-message a {
+	color: #82d5f6;
+}
+/* slider */
+#slider .slides img {
+	background: #161616;
+	padding: 4px;
+	border: solid 1px #272727;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+/* menu */
+#main-nav a {
+	color: #898989;
+	text-shadow: 0 1px 3px rgba(0, 0, 0, .8);
+}
+#main-nav a:hover {
+	color: #fff;
+}
+#main-nav .current_page_item a, #main-nav .current-menu-item a {
+	background: none;
+	color: #fff;
+}
+#main-nav .current_page_item a:hover, #main-nav .current-menu-item a:hover {
+	color: #fff;
+	text-shadow: none;
+}
+/* content area */
+.post-title a {
+	color: #fff;
+}
+.post-title a:hover {
+	color: #6dcff6;
+}
+.post-date {
+	color: #999;
+}
+.post-meta a {
+	color: #ccc;
+}
+.post-meta a:hover {
+	color: #82d5f6;
+}
+.gridview a {
+	color: #999;
+}
+.gridview .excerpt {
+	color: #666;
+}
+.next-prev-post a {
+	color: #6dcff6;
+}
+.next-prev-post a:hover {
+	color: #fff;
+}
+/* comments */
+.commentwrap {
+	border-top: solid 1px #333;
+}
+.commentlist li {
+	border-top: solid 1px #333;
+}
+.commentlist .avatar {
+	background: #161616;
+	padding: 4px;
+	border: solid 1px #272727;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+#respond {
+	border-top: solid 1px #333;
+}
+/* img-style */
+.img-style {
+	background: #161616;
+	border: solid 1px #272727;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+/* showcase */
+.showcase-nav img {
+	background: #161616;
+	border: solid 1px #272727;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+.showcase-nav .activeSlide img {
+	border: solid 1px #666;
+}
+/* search */
+#searchform #s {
+	background-image: url(images/search.png);
+}
+/* sidebar */
+#sidebar a {
+	color: #ccc;
+	text-decoration: none;
+}
+#sidebar a:hover {
+	color: #6dcff6;
+}
+#sidebar h4, .widgettitle {
+	color: #999;
+}
+#sidebar h4 a, .widgettitle a {
+	color: #ccc;
+	text-decoration: none;
+}
+.widget ul a {
+	color: #ccc;
+	text-decoration: none;
+}
+.widget ul a:hover {
+	color: #6dcff6;
+}
+.widget .recent-comments .avatar {
+	background: #212121;
+	border: solid 1px #333;
+	-webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-moz-box-shadow: 0 1px 3px rgba(0, 0, 0, .6);
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+}
+/* footer */
+#footer {
+	border-top: solid 1px #333;
+}
+.footer-text {
+	color: #777;
+}
+.footer-text a {
+	color: #999;
+}
+.footer-text a:hover {
+	color: #f30;
+}
