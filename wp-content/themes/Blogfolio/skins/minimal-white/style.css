@@ -8,7 +8,7 @@ html {
 	background: #fff;
 }
 body {
-	background: #fff;
+	background: #6971A7;
 	color: #777;
 }
 a {
@@ -98,15 +98,15 @@ input[type=reset]:hover, input[type=submit]:hover {
 
 /* menu */
 #main-nav a {
-	color: #999;
+	color: #333333;
 	text-shadow: none;
 }
 #main-nav a:hover {
 	color: #000;
 }
 #main-nav .current_page_item a, #main-nav .current-menu-item a, #main-nav .current-post-ancestor a{
-	background: none;
-	color: #000;
+	background: #6971A7;
+	color: #FFF;
 }
 #main-nav .current_page_item a:hover, #main-nav .current-menu-item a:hover {
 	color: #000;
@@ -224,6 +224,8 @@ input[type=reset]:hover, input[type=submit]:hover {
 }
 
 /* sidebar */
+#sidebar{float:right;}
+
 #sidebar h4, .widgettitle {
 	color: #333333;
 }

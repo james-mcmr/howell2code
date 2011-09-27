@@ -15,6 +15,7 @@ $data['page'] = array('is_home'=>is_home());
 <?php if ( is_single() || is_page() ) wp_enqueue_script( 'comment-reply' ); ?>
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js"></script>
+<script src="<?php bloginfo('template_directory'); ?>/js/jquery.easing.1.3.js"></script>
 <?php wp_head(); ?>
 
 </head>
@@ -28,7 +29,6 @@ $data['page'] = array('is_home'=>is_home());
                 <a href="<?php echo get_option('home'); ?>/"><?php bloginfo('name'); ?></a>
             <?php } ?>
       </div>
-		<div id="site-description"><?php bloginfo('description'); ?></div>
 
 		<?php
 		if (function_exists('wp_nav_menu')) {
@@ -42,7 +42,14 @@ $data['page'] = array('is_home'=>is_home());
 	<div class="header-widget">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header_Widget') ) ?>
 		<div class="rss"><a href="<?php if($data['setting-custom_feed_url'] != ""){ echo $data['setting-custom_feed_url']; } else { echo bloginfo('rss2_url'); } ?>">RSS</a></div>
-	</div>
+			<div id="site-contact">
+                <ul>
+                    <li><a href="#" class="email">Stalk me via email</a></li>
+                    <li><a href="#" class="twitter">Stalk me on Twitter</a></li>
+                    <li><a href="#" class="linkedin">Stalk me on LinkedIn</a></li>
+                </ul>
+            </div>	
+    	</div>
 
 	</div>
 	<!--/header -->
