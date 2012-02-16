@@ -41,7 +41,6 @@ $data['page'] = array('is_home'=>is_home());
 
 	<div class="header-widget">
 		<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Header_Widget') ) ?>
-		<div class="rss"><a href="<?php if($data['setting-custom_feed_url'] != ""){ echo $data['setting-custom_feed_url']; } else { echo bloginfo('rss2_url'); } ?>">RSS</a></div>
 			<div id="site-contact">
                 <ul>
                     <li><a href="#" class="email">Stalk me via email</a></li>
