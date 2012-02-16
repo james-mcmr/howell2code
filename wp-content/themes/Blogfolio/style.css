@@ -232,9 +232,9 @@ HEADER
     border-radius: 4px 4px 4px 4px;
     color: #555555;
     display: block;
-    height: 18px;
+    height: 20px;
     margin-bottom: 5px;
-    padding: 4px 30px 0 5px;
+    padding: 2px 30px 0 5px;
     text-align: left;
     text-decoration: none;
 }
@@ -1151,7 +1151,6 @@ img.alignleft, img.aligncenter, img.alignright, img.alignnone {
 }
 h3 a{
 	font-size:14px;
-	padding-left:20px;
 }
 a{
 	color:#777;
