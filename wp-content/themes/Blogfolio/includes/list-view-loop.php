@@ -24,7 +24,7 @@
 				<?php } ?>
 
 				<?php if($hide_meta != 'on'){ ?>
-					<p class="post-meta"><span class="post-author"><?php the_author() ?></span> <span class="post-category"><?php the_category(', ') ?></span> <?php the_tags('<span class="post-tags">', ', ', '</span>'); ?></span> <span class="post-comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span> <?php edit_post_link('Edit', '[', ']'); ?></p>
+					<p class="post-meta"><span class="post-author"><?php the_author() ?></span> <span class="post-category"><?php the_category(', ') ?></span> <?php the_tags('<span class="post-tags">', ', ', '</span>'); ?></span> <!--<span class="post-comments"><?php //comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span> <?php edit_post_link('Edit', '[', ']'); ?>!--></p>
 				<?php } ?>
 				
 				<?php if($display_content == 'excerpt'){ ?>

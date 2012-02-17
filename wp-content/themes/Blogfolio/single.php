@@ -26,7 +26,7 @@
                         <?php } ?>
                         <h1 class="post-title"><?php the_title(); ?></h1>
                         <?php if ($hide_meta != "on"){ ?>
-                            <p class="post-meta"><span class="post-author"><?php the_author() ?></span> <span class="post-category"><?php the_category(', ') ?></span> <?php the_tags('<span class="post-tags">', ', ', '</span>'); ?></span> <span class="post-comments"><?php comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span></p>
+                            <p class="post-meta"><span class="post-author"><?php the_author() ?></span> <span class="post-category"><?php the_category(', ') ?></span> <?php the_tags('<span class="post-tags">', ', ', '</span>'); ?></span> <!--<span class="post-comments"><?php //comments_popup_link('No Comments', '1 Comment', '% Comments'); ?></span>!--></p>
                         <?php } ?>
                         <?php if(!$data['setting-post_image_single_disabled']){ ?>
                             <p class="single-post-img <?php echo $data['setting-image_post_align']; ?>">
