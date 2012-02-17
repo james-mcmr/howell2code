@@ -1285,6 +1285,11 @@ a:hover{
 	font-family: Arial;
 }
 
+.ei_descr a, .ei_descr a:hover, .ei_descr a:visited{
+	color:#6971A7;
+}
+
+
 /* For the index_3 demo */
 ul.trigger_list{
 	position:absolute;
