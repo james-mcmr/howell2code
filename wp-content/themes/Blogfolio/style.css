@@ -628,6 +628,10 @@ SINGLE
 	float:left;
 }
 
+.project-text h2{
+	font-size:1.2em;
+}
+
 .showcase {
 	position: relative;
 	margin-bottom:30px;
