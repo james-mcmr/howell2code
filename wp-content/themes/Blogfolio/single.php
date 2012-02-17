@@ -60,7 +60,7 @@
 				      }
                  ?>                               
 			<?php wp_link_pages(array('before' => '<p><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-            <?php comments_template(); ?>
+            <?php //comments_template(); ?>
             
             <?php endwhile; else: ?>       
                 <p><?php _e( 'Sorry, nothing found.', 'themify' ); ?></p>
