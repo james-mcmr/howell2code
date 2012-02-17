@@ -1287,6 +1287,7 @@ a:hover{
 
 .ei_descr a, .ei_descr a:hover, .ei_descr a:visited{
 	color:#6971A7;
+	font-weight:bold;
 }
 
 
