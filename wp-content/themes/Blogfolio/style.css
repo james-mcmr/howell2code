@@ -628,7 +628,7 @@ SINGLE
 	float:left;
 }
 
-.project-text h2{
+.project-text h2, div.listview h2{
 	font-size:1.2em;
 }
 
