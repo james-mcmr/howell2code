@@ -1168,7 +1168,7 @@ a{
 	text-decoration:none;
 }
 a:hover{
-	color:#fff;
+	text-decoration:underline;
 }
 .content {
 	margin:0 auto;
