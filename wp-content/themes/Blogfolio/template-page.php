@@ -25,7 +25,7 @@
 			<?php edit_post_link(__('Edit','themify'), '[', ']'); ?>
 			
 			<?php if(!$data['setting-comments_visibility_pages']){ ?>
-				<?php comments_template(); ?>
+				<?php //comments_template(); ?>
 			<?php } ?>
 	  
 		  </div>
