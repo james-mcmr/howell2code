@@ -871,17 +871,22 @@ SIDEBAR
 }
 .widget {
 	margin: 0 0 30px;
-	background:#E1E1E1;
-	padding:10px;
 }
 .widget .widgettitle {
 	font: bold 13px/120% Arial, Helvetica, sans-serif;
 	text-transform: uppercase;
 	letter-spacing: .1em;
 	margin: 0 0 6px;
-	padding: 0 0 6px;
+	padding: 5px;
 	color: #787b7b;
+	background:#E1E1E1;
 }
+
+.widget ul li.twitter-item{
+	padding:10px 0px;
+	border-top:1px solid #6971A7;
+}
+
 .widgettitle a {
 	color: #30333a;
 	text-decoration: none;
@@ -892,10 +897,8 @@ SIDEBAR
 	list-style: none;
 }
 .widget li {
-	padding: 10px 0;
 	margin: 0;
 	color:#666666;
-	border-bottom:1px solid;
 }
 .widget ul ul {
 	padding: 10px 0 0 18px;
